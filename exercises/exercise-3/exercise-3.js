@@ -6,3 +6,12 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+let sum = 0;
+for (let item in order){
+let { quantity, itemName, unitPrice} = order[item];
+
+console.log(`${quantity} ${itemName} ${unitPrice * quantity}`);
+sum += unitPrice * quantity;
+
+}
+console.log(sum)
